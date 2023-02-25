@@ -1,9 +1,10 @@
-# Projeto 1
-### Autora: Katrina de Morais Santos
+# helloquarkus
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+
+## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
 ```shell script
@@ -53,4 +54,10 @@ If you want to learn more about building native executables, please consult http
 - RESTEasy Classic ([guide](https://quarkus.io/guides/resteasy)): REST endpoint framework implementing JAX-RS and more
 - JDBC Driver - PostgreSQL ([guide](https://quarkus.io/guides/datasource)): Connect to the PostgreSQL database via JDBC
 
+## Provided Code
 
+### RESTEasy JAX-RS
+
+Easily start your RESTful Web Services
+
+[Related guide section...](https://quarkus.io/guides/getting-started#the-jax-rs-resources)
