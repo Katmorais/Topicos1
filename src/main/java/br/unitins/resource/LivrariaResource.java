@@ -77,9 +77,6 @@ public class LivrariaResource {
       return livrariaId;
    }
 
-
-
-
    @DELETE
    @Path("/{id}")
    @Produces(MediaType.APPLICATION_JSON)
