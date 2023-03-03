@@ -1,18 +1,22 @@
 package br.unitins.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-import io.quarkus.hibernate.orm.panache.PanacheEntity;
 
 @Entity
-public class Livraria extends PanacheEntity{
-
+public class Livraria {
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String nomeLivro;
     private String autor;
     private String editora;
     private String anoLancamento;
     private int estoque;
-
 
     public String getNomeLivro() {
         return nomeLivro;
@@ -43,6 +47,12 @@ public class Livraria extends PanacheEntity{
     }
     public void setEstoque(int estoque) {
         this.estoque = estoque;
+    }
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
     }
 
     
